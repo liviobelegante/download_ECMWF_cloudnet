@@ -1,0 +1,16 @@
+[project]
+name = "cloudnet-profiles"
+version = "0.11.0"
+description = "Read ECMWF profiles from Cloudnet and cache them locally"
+readme = "README.md"
+authors = [{ name = "Livio Belegante", email = "livio@inoe.ro" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = ["numpy", "pandas", "xarray"]
+
+[project.urls]
+Homepage = "https://cloudnet.fmi.fi"
+Documentation = "https://cloudnet.fmi.fi/api/model-files"
+
+[project.scripts]
+cloudnet-profiles = "cloudnet_profiles.profiles:_cli"
